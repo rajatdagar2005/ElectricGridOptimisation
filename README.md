@@ -1,24 +1,37 @@
-Electric Grid Design Program
-The Electric Grid Design Program is a comprehensive application that allows users to design, manage, and optimize electric power grids. The program enables the creation of a graph with substations and power lines, and supports operations such as adding/removing components, calculating Minimum Spanning Trees (MSTs), applying budget constraints, simulating substation failures, and analyzing grid performance.
-This program helps visualize the structure of a power grid, ensure that it meets budget constraints, and calculate the most cost-effective ways to connect substations using MST algorithms (Prim's and Kruskal's).
-________________________________________
-Features
-Graph Creation & Management:
-•	Create and Load Graphs: Users can create a new graph for the power grid or load an existing grid from a file.
-•	Add/Remove Substations and Power Lines: You can add new substations to the grid or remove existing ones. Power lines can be added or removed between any two substations.
-•	Display the Graph: View the current graph showing the substations and their connections through power lines.
-Optimization:
-•	Prim's MST Algorithm: Calculate the Minimum Spanning Tree (MST) using Prim's algorithm to find the minimum cost for connecting all substations.
-•	Kruskal's MST Algorithm: Compute the MST using Kruskal's algorithm, providing another method for cost optimization.
-•	Apply Budget Constraints: Ensure that the total cost of selected power lines does not exceed the available budget. The program will optimize the grid if necessary.
-Analysis:
-•	Connectivity Check: Check if a power line exists between any two substations.
-•	Shortest Path Calculation: Calculate the shortest path between two substations using Dijkstra's algorithm.
-•	Power Line Count: Determine the number of power lines connected to a specific substation.
-•	Distance Calculation: Calculate the minimum distance (in terms of power line cost) between two substations.
-Simulation:
-•	Substation Failure Simulation: Simulate the failure of a substation and observe its impact on the grid, removing any power lines connected to the failed substation.
-File Operations:
-•	Save the Grid to File: Save the current state of the grid to a file for later use.
-•	Load the Grid from File: Load a previously saved grid from a file.
+#  Electric Grid Design Program  
 
+The **Electric Grid Design Program** is a comprehensive application for designing, managing, and optimizing electric power grids. It enables users to create a graph with substations and power lines while supporting various operations such as adding/removing components, calculating Minimum Spanning Trees (MSTs), applying budget constraints, simulating substation failures, and analyzing grid performance.  
+
+This program provides visualization tools to understand the grid structure, ensures adherence to budget constraints, and determines the most cost-effective ways to connect substations using MST algorithms like **Prim’s** and **Kruskal’s**.  
+  
+
+###  Graph Creation & Management  
+- **Create and Load Graphs** – Create a new power grid or load an existing one from a file.  
+- **Add/Remove Substations and Power Lines** – Dynamically add or remove substations and power lines.  
+- **Display the Graph** – Visualize the current grid structure with substations and their connections.  
+
+###  Optimization  
+- **Prim’s MST Algorithm** – Compute the **Minimum Spanning Tree (MST)** using **Prim’s algorithm** for cost-efficient grid connectivity.  
+- **Kruskal’s MST Algorithm** – Calculate MST using **Kruskal’s algorithm** as an alternative optimization method.  
+- **Apply Budget Constraints** – Ensure the grid remains within a specified budget while maintaining connectivity.  
+
+###  Analysis  
+- **Connectivity Check** – Verify if a power line exists between two substations.  
+- **Shortest Path Calculation** – Use **Dijkstra’s algorithm** to determine the shortest path between substations.  
+- **Power Line Count** – Count the number of power lines connected to a specific substation.  
+- **Distance Calculation** – Compute the minimum cost distance between two substations.  
+
+###  Simulation  
+- **Substation Failure Simulation** – Simulate the failure of a substation and analyze its impact on the grid by removing its connections.  
+
+###  File Operations  
+- **Save the Grid to File** – Save the current state of the grid for future use.  
+- **Load the Grid from File** – Load a previously saved grid configuration.  
+
+##  Usage  
+Simply run the program to start designing and optimizing electric grids. Choose between different algorithms and features for an interactive experience.  
+
+##  Technologies Used  
+- **C++** for core logic and graph algorithms  
+- **Graph Theory** for optimization and analysis  
+- **File Handling** for saving and loading grid states  
